@@ -1,6 +1,7 @@
 body {
     background-color: #FFFDF5;
-	font-family: 'Roboto', sans-serif;
+	/* background-color: #000000; */
+    font-family: 'Roboto', sans-serif;
     color: #7D7D7D;
 }
 
@@ -242,7 +243,7 @@ body {
     margin-top: 30%;
 }
 
-.support-chat{
+.support-chat-icon{
     position: fixed;
     bottom: 8px;
     right: 170px;
@@ -252,10 +253,20 @@ body {
     border-radius: 50%;
     box-shadow: 0px 4px 10px 0px #514A7E66;
     text-align: center;
+    z-index: 1;
     
 
 }
 
-.sup-chat{
+.support-chat-window {
+    /* display: none; */
+    position: fixed;
+    background-color: white;
+    width: 322px;
+    height: 620px;
+    right: 170px;
+    bottom: 8px;
+    border-radius: 30px;
 
 }
+
