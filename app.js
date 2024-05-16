@@ -8,21 +8,24 @@ window.addEventListener("scroll", () => {
     }
 })
 
-// const supChat = document.querySelector(".support-chat-window")
+const supChat = document.querySelector(".support-chat-window")
 
-// document.addEventListener("click", () => {
-//     if(supChat == "none") {
-//         document.querySelector("support-chat-window").
-//     } else {
-//         document.classList.remove("open") 
-//     }
-// })
-
-function open(chat) {
-    display = document.getElementById("box").style.display;
-    if(display == "none") {
-        document.getElementById("box").style.display = "block"
-    } else {
-        document.getElementById("box").style.display = "none"
+addEventListener("click", () => {
+    if(document.querySelector(".support-chat-window")){
+        supChat.classList.add("open")
     }
-}
+})
+
+
+
+
+
+
+// function open(chat) {
+//     display = document.getElementById("box").style.display;
+//     if(display == "none") {
+//         document.getElementById("box").style.display = "block";
+//     } else {
+//         document.getElementById("box").style.display = "none";
+//     }
+// }

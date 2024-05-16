@@ -259,7 +259,6 @@ body {
 }
 
 .support-chat-window {
-    /* display: none; */
     position: fixed;
     background-color: white;
     width: 322px;
@@ -267,6 +266,14 @@ body {
     right: 170px;
     bottom: 8px;
     border-radius: 30px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 0;
 
+}
+.support-chat-window.open {
+    z-index: 1;
+    opacity: 1;
+    pointer-events: all;
 }
 
