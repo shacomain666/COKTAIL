@@ -1,31 +1,26 @@
-const btnTop = document.querySelector(".go-top")
+const btnTop = document.querySelector(".go-top");
 
 window.addEventListener("scroll", () => {
-    if(window.scrollY > 100){
+    if(window.scrollY > 500){
         btnTop.classList.add("active");
     }   else {
         btnTop.classList.remove("active");
     }
+});
+
+btnTop.addEventListener("click", () => {
+    window.scrollTo({top: 0})
+    return;
 })
 
-const supChat = document.querySelector(".support-chat-window")
+const supChat = document.querySelector(".support-chat-icon");
+const openChat = document.querySelector(".support-chat-window");
+const closeChat = document.querySelector(".close-icon");
 
-addEventListener("click", () => {
-    if(document.querySelector(".support-chat-window")){
-        supChat.classList.add("open")
-    }
+supChat.addEventListener("click", () => {
+    openChat.classList.add("open");
+});
+
+closeChat.addEventListener("click", () => {
+    openChat.classList.remove("open");
 })
-
-
-
-
-
-
-// function open(chat) {
-//     display = document.getElementById("box").style.display;
-//     if(display == "none") {
-//         document.getElementById("box").style.display = "block";
-//     } else {
-//         document.getElementById("box").style.display = "none";
-//     }
-// }

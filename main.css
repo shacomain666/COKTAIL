@@ -1,6 +1,5 @@
 body {
     background-color: #FFFDF5;
-	/* background-color: #000000; */
     font-family: 'Roboto', sans-serif;
     color: #7D7D7D;
 }
@@ -259,8 +258,9 @@ body {
 }
 
 .support-chat-window {
+    display: block;
     position: fixed;
-    background-color: white;
+    background-color: #fffdf5;
     width: 322px;
     height: 620px;
     right: 170px;
@@ -269,11 +269,18 @@ body {
     opacity: 0;
     pointer-events: none;
     z-index: 0;
-
+    border:  1px solid #514A7E;
+    box-shadow: 0px 4px 10px 0px #514A7E66;
 }
 .support-chat-window.open {
     z-index: 1;
     opacity: 1;
     pointer-events: all;
+}
+
+.close-icon {
+    float: right;
+    margin-top: -25px;
+    margin-right: -25px;
 }
 
