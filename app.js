@@ -18,9 +18,13 @@ const openChat = document.querySelector(".support-chat-window");
 const closeChat = document.querySelector(".close-icon");
 
 supChat.addEventListener("click", () => {
-    openChat.classList.add("open");
+    console.log(123);
+    openChat.classList.add("open")
 });
 
+
+
 closeChat.addEventListener("click", () => {
-    openChat.classList.remove("open");
+    console.log(444444);
+    openChat.classList.remove("open")
 })

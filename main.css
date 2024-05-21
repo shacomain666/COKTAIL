@@ -243,6 +243,7 @@ body {
 }
 
 .support-chat-icon{
+    text-align: center;
     position: fixed;
     bottom: 8px;
     right: 170px;
@@ -251,14 +252,13 @@ body {
     background-color: #514A7E;
     border-radius: 50%;
     box-shadow: 0px 4px 10px 0px #514A7E66;
-    text-align: center;
     z-index: 1;
-    
-
+}
+.c-ic{
+    margin-top: 25%;
 }
 
 .support-chat-window {
-    display: block;
     position: fixed;
     background-color: #fffdf5;
     width: 322px;
@@ -271,6 +271,7 @@ body {
     z-index: 0;
     border:  1px solid #514A7E;
     box-shadow: 0px 4px 10px 0px #514A7E66;
+    transition: 0.3s;
 }
 .support-chat-window.open {
     z-index: 1;
@@ -279,8 +280,10 @@ body {
 }
 
 .close-icon {
+    z-index: 999;
     float: right;
     margin-top: -25px;
     margin-right: -25px;
 }
+
 
