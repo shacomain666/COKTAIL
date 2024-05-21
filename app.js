@@ -18,13 +18,35 @@ const openChat = document.querySelector(".support-chat-window");
 const closeChat = document.querySelector(".close-icon");
 
 supChat.addEventListener("click", () => {
-    console.log(123);
     openChat.classList.add("open")
 });
 
 
 
 closeChat.addEventListener("click", () => {
-    console.log(444444);
     openChat.classList.remove("open")
+})
+
+
+
+
+
+
+
+
+
+
+
+const arrLeft = document.querySelector(".arr-left");
+const arrRight = document.querySelector(".arr-right");
+const cardsScroll = document.querySelector(".cards-scroll");
+
+arrLeft.addEventListener("click", () => {
+    console.log('left');
+});
+
+
+
+arrRight.addEventListener("click", () => {
+    console.log('right');
 })

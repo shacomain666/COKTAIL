@@ -232,6 +232,7 @@ body {
     pointer-events: none;
     opacity: 0;
     transition: all 0.4s;
+    z-index: 999;
 }
 
 .go-top.active{
@@ -286,4 +287,92 @@ body {
     margin-right: -25px;
 }
 
+.cards-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 34.92px;
+    text-align: left;
+    color: #121212;
+    
 
+
+    /* font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #000000; */
+}
+.cards-text{
+    display: flex;
+}
+.cards-text p{
+    font-family: "Bad Script";
+    font-weight: 400;
+    font-size: 40px;
+    color: #514A7E;
+}
+.cards-main {
+    margin-top:130px ;
+}
+.card{
+    margin-top: 60px;
+}
+
+.card-items{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    text-align: left;
+    color: #000000;
+    margin-right: 20px;
+}
+
+.more-button{
+    width: 150px;
+    height: 37px;
+    background-color: #FFFDF5;
+    border: solid 1px #514A7E;
+    color: #514A7E;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.2s;
+    
+}
+
+.more-button:hover{
+    background-color: #514A7E;
+    color: #FFFDF5;
+    box-shadow: 0px 4px 50px 0px #514A7E99;
+}
+
+.more-button:hover .arrow__more {
+    color: #FFFDF5;
+}
+
+.cards {
+    
+    position: relative;
+}
+
+.cards-scroll {
+    display: flex;
+    justify-content: space-evenly;
+    overflow-x: scroll;
+}
+
+.arr {
+    position: absolute;
+    bottom: 150px;
+    height: 35px;
+}
+
+.arr-left {
+    left: 0;
+}
+
+.arr-right {
+    right: 0;
+}
